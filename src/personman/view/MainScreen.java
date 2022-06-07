@@ -2,6 +2,7 @@ package personman.view;
 
 
 import javafx.application.Application;
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -14,14 +15,21 @@ public class MainScreen extends Application{
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		primaryStage = secondaryStage;
-		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("mainScreen.fxml"));
+		secondaryStage = primaryStage;
+		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/mainScreen.fxml"));
         Parent root = fxmlLoader.load();
         Scene tela = new Scene(root);
         secondaryStage.setTitle("Person Management");
         secondaryStage.setScene(tela);
-        secondaryStage.show();
+        secondaryStage.getIcons().add(new Image("C:\\ProjetoMVC\\src\\imgs\\icon.png"));
         secondaryStage.setResizable(false);
-        secondaryStage.getIcons().add(new Image("C:\\ProjetoMVC\\src\\imgs\\icon.jpg"));
+        secondaryStage.show();
+        
+	}
+	
+	public static void createScene() throws Exception {
+		MainScreen mainScreen = new MainScreen();
+		Stage primaryStage = new Stage();
+		mainScreen.start(primaryStage);
 	}
 }

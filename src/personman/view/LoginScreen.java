@@ -20,14 +20,14 @@ public class LoginScreen extends Application{
 	@Override
     public void start(Stage primaryStage) throws Exception {
 		secondaryStage = primaryStage;
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("loginScreen.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/loginScreen.fxml"));
         Parent root = fxmlLoader.load();
-        Scene tela = new Scene(root);
+        Scene scene = new Scene(root);
         secondaryStage.setTitle("Person Management");
-        secondaryStage.setScene(tela);
-        secondaryStage.show();
+        secondaryStage.setScene(scene);
         secondaryStage.setResizable(false);
-        secondaryStage.getIcons().add(new Image("C:\\ProjetoMVC\\src\\imgs\\icon.jpg"));
+        secondaryStage.getIcons().add(new Image("C:\\ProjetoMVC\\src\\imgs\\icon.png"));
+        secondaryStage.show();
     }
 	
 	public static void closeScreen() {

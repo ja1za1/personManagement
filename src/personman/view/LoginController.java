@@ -3,48 +3,40 @@ package personman.view;
 
 
 import javafx.event.ActionEvent;
-
 import personman.controller.DealWithDataReaded;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-//import javafx.stage.Stage;
-import javafx.stage.Stage;
 
 public class LoginController {
 
     @FXML
-    private Button botaoLogar;
+    private Button loginButton;
 
     @FXML
-    private PasswordField campoSenha;
+    private PasswordField passwordField;
 
     @FXML
-    private TextField campoUsuario;
+    private TextField userField;
     
     @FXML
     private Label errorLogin;
-
-
+   
     @FXML
-    void fazerLogin(ActionEvent event) throws Exception{
-        String usuario = campoUsuario.getText();
-        String senha = campoSenha.getText();
-        if(DealWithDataReaded.verifyLogin(usuario, senha)) {
+    void clickLogin(ActionEvent event) throws Exception{
+        String user = userField.getText();
+        String password = passwordField.getText();
+        if(DealWithDataReaded.verifyLogin(user, password)) {
         	LoginScreen.closeScreen();
-        	MainScreen mainScreen = new MainScreen();
-        	Stage primaryStage = new Stage();
-        	mainScreen.start(primaryStage);
+        	MainScreen.createScene();
         }
         else {
-        	errorLogin.setText("Erro ao fazer login!!!");
+        	errorLogin.setText("Erro ao fazer login!");
         }
         
     }
     
-  
-
-
+ 
 }
