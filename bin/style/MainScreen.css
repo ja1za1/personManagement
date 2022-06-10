@@ -1,0 +1,72 @@
+#tabpane {
+	-fx-tab-min-height: 6em;
+	-fx-tab-max-height: 6em;
+	
+	-fx-tab-min-width: 3em;
+	-fx-tab-max-width: 3em;
+	
+	background-color:  #2B2D42;
+	-fx-background-color:  #2B2D42;
+}
+
+#pane {
+	border-color: #364259;
+	-fx-border-color : #364259;
+	
+	background-color: #364259;	
+	-fx-background-color: #364259;
+	
+}
+
+
+.tab .tab-label{
+	background-color: transparent;
+	-fx-background-color: transparent;
+	
+	-fx-alignment: CENTER;
+	-fx-text-fill: #EBEAF0;
+}
+.tab{
+	background-color: #2B2D42;
+	-fx-background-color: #2B2D42;
+	
+	-fx-background-insets: 0.0;
+	-fx-background-radius: 0.0;
+	
+	padding: 0 30 0 30;
+	-fx-padding: 0 30 0 30;
+}
+
+.tab:selected {
+	background-color: #364259;
+	-fx-background-color: #364259;
+	-fx-background-insets: 0;
+	-fx-background-radius: 0;
+	border-width: 5 0 0 0;
+	-fx-border-width: 5 0 0 0;
+	border-color: #000000;
+	-fx-border-color: #000000;
+}
+
+
+.tab:focused{
+	-fx-focus-color: transparent;
+}
+
+.tab-pane *.tab-header-background{
+	background-color: transparent;
+	-fx-background-color: transparent;
+}
+
+.tab-pane:left *.tab-header-area{
+	-fx-background-insets: 0, 0 0 10;
+	padding: 0.0em 0.0em 0.0em 0.0em;
+	-fx-padding: 0.0em 0.0em 0.0em 0.0em;
+}
+
+.tab:selected .focus-indicator{
+	-fx-focus-color: transparent;
+	border-color: transparent;
+	-fx-border-color: transparent;
+	
+}

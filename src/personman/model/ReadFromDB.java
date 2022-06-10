@@ -5,25 +5,28 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class ReadFromDB {
 	
+	private static final String CLASSNAME = "org.postgresql.Driver",
+						 IP = "192.168.0.114",
+						 DATABASEURL = "jdbc:postgresql://"+IP+":5432/peopleManagement",
+						 DATABASEUSER = "read_only",
+						 DATABASEPASSWORD = "garlic2468";
+	
 	public static List<String> searchUserPassword() {
 		List <String> userPassword = new ArrayList<>();
 		try {
-			Class.forName("org.postgresql.Driver");
-			String ip = "192.168.0.114";
-			Connection conection = null;
-			conection = DriverManager.getConnection("jdbc:postgresql://"+ip+":5432/peopleManagement","read_only","garlic2468");
+			Class.forName(CLASSNAME);
+			Connection conection = DriverManager.getConnection(DATABASEURL,DATABASEUSER,DATABASEPASSWORD);
 			if(conection != null) {
-				Statement statement = null;
-				ResultSet rs = null;
-				String query = "SELECT * from login";
-				statement = conection.createStatement();
-				rs = statement.executeQuery(query); 
+				Statement statement = conection.createStatement();
+				final String query = "SELECT * from login";
+				ResultSet rs = statement.executeQuery(query); 
 				while(rs.next()) {
 					userPassword.add(rs.getString(1));
 					userPassword.add(rs.getString(2));
@@ -32,8 +35,12 @@ public class ReadFromDB {
 		}catch (Exception e) {
 			System.out.println(e);
 		}
-		
 		return userPassword;
-	}
+	}//List<String> searchUserPassword()
+	
+	public static Person transformPersonData(String[] userData, LocalDate userBirthday) {
+		Person person = new Person(userData[0],userData[1],userData[2],userData[3],userData[4],userBirthday);
+		return person;
+	}//Person transformPersonData()
 
-}
+}//class ReadFromDB

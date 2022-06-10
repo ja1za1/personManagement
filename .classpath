@@ -6,58 +6,57 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx.base.jar">
+	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx.base.jar" sourcepath="src/doc/src.zip">
 		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/ProjetoMVC/src/doc/openjfx-18.0.1-javadoc.zip!/javafx-18.0.1-javadoc"/>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx.controls.jar">
+	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx.controls.jar" sourcepath="src/doc/src.zip">
 		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/ProjetoMVC/src/doc/openjfx-18.0.1-javadoc.zip!/javafx-18.0.1-javadoc"/>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx.fxml.jar">
+	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx.fxml.jar" sourcepath="src/doc/src.zip">
 		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/ProjetoMVC/src/doc/openjfx-18.0.1-javadoc.zip!/javafx-18.0.1-javadoc"/>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx.graphics.jar">
+	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx.graphics.jar" sourcepath="src/doc/src.zip">
 		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/ProjetoMVC/src/doc/openjfx-18.0.1-javadoc.zip!/javafx-18.0.1-javadoc"/>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx.media.jar">
+	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx.media.jar" sourcepath="src/doc/src.zip">
 		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/ProjetoMVC/src/doc/openjfx-18.0.1-javadoc.zip!/javafx-18.0.1-javadoc"/>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx.swing.jar">
+	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx.swing.jar" sourcepath="src/doc/src.zip">
 		<attributes>
+			<attribute name="javadoc_location" value="https://openjfx.io/javadoc/18/"/>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx.web.jar">
+	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx.web.jar" sourcepath="src/doc/src.zip">
 		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/ProjetoMVC/src/doc/openjfx-18.0.1-javadoc.zip!/javafx-18.0.1-javadoc"/>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx-swt.jar">
+	<classpathentry kind="lib" path="C:/javafx-sdk-18.0.1/lib/javafx-swt.jar" sourcepath="src/doc/src.zip">
 		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/ProjetoMVC/src/doc/openjfx-18.0.1-javadoc.zip!/javafx-18.0.1-javadoc"/>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Workspace eclipse/postgresql-42.3.6.jar">
+	<classpathentry kind="lib" path="D:/Workspace eclipse/postgresql-42.3.6.jar" sourcepath="src/doc/postgresql-42.3.6-jdbc-src.zip">
 		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="D:/Workspace eclipse/charm-glisten-6.0.7-API-CHANGE-RELEASE-JUNE-2021.jar">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="D:/Workspace eclipse/charm-glisten-6.0.7-API-CHANGE-RELEASE-JUNE-2021-javadoc.jar">
-		<attributes>
+			<attribute name="javadoc_location" value="https://javadoc.io/doc/org.postgresql/postgresql/latest/index.html"/>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>

@@ -3,6 +3,7 @@ package personman.view;
 
 
 import javafx.event.ActionEvent;
+
 import personman.controller.DealWithDataReaded;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -11,6 +12,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 public class LoginController {
+	
+	private final static String LOGINERROR = "Erro ao fazer login!";
 
     @FXML
     private Button loginButton;
@@ -33,10 +36,11 @@ public class LoginController {
         	MainScreen.createScene();
         }
         else {
-        	errorLogin.setText("Erro ao fazer login!");
+        	errorLogin.setText(LOGINERROR);
         }
         
-    }
+    }//void clickLogin()
+    
     
  
-}
+}//class LoginController
