@@ -91,7 +91,11 @@
                               <Font name="Calibri Bold" size="19.0" />
                            </font>
                         </Label>
+<<<<<<< HEAD
+                        <Label fx:id="errorEmail" layoutX="137.0" layoutY="101.0" prefHeight="22.0" prefWidth="112.0" textFill="#c90e0e">
+=======
                         <Label layoutX="137.0" layoutY="101.0" prefHeight="22.0" prefWidth="112.0" text="Email inválido" textFill="#c90e0e">
+>>>>>>> 0ecdab9b45cd177b6c9d95523072ae6c389f9510
                            <font>
                               <Font name="Calibri Bold" size="19.0" />
                            </font>
@@ -106,6 +110,14 @@
                               <Font name="Calibri Bold" size="19.0" />
                            </font>
                         </Label>
+<<<<<<< HEAD
+                        <Label fx:id="errorName" layoutX="106.0" layoutY="25.0" prefHeight="22.0" prefWidth="174.0" textFill="#c90e0e">
+                           <font>
+                              <Font name="Calibri Bold" size="19.0" />
+                           </font>
+                        </Label>
+=======
+>>>>>>> 0ecdab9b45cd177b6c9d95523072ae6c389f9510
                      </children>
                   </Pane>
                </children></AnchorPane>

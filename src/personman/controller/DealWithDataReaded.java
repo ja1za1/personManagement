@@ -9,6 +9,27 @@ import personman.model.ReadFromDB;
 
 public class DealWithDataReaded {
 	
+<<<<<<< HEAD
+	public static final int INCONSISTENT_DATA = 0,
+							SUCCESS = 1,
+							DB_CONNECTION_FAILED = -1;
+	
+	public static int verifyLogin(String user, String password) {
+		List <String> userAndPassword = new ArrayList<>();
+		userAndPassword = ReadFromDB.searchUserPassword();
+		if(userAndPassword != null){
+			if(!userAndPassword.isEmpty() ) {
+				int indexOfUser = userAndPassword.indexOf(user);
+				if(indexOfUser % 2 != 0) {
+					return INCONSISTENT_DATA;
+				}
+				else if(userAndPassword.contains(user) && userAndPassword.get(indexOfUser+1).toString().compareTo(password) == 0) {
+					return SUCCESS;
+				}
+			}
+		}
+		return DB_CONNECTION_FAILED;
+=======
 	public static boolean verifyLogin(String user, String password) {
 		List <String> userAndPassword = new ArrayList<>();
 		userAndPassword = ReadFromDB.searchUserPassword();
@@ -22,6 +43,7 @@ public class DealWithDataReaded {
 			}
 		}
 		return false;
+>>>>>>> 0ecdab9b45cd177b6c9d95523072ae6c389f9510
 	}//boolean verifyLogin()
 	
 	public static boolean verifyRegistration(String[] userData, LocalDate userBirthday) {

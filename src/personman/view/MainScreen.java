@@ -35,9 +35,15 @@ public class MainScreen extends Application{
 	}//Parent loadFXML()
 	
 	private static void configureStage(Stage primaryStage, Scene scene) {
+<<<<<<< HEAD
+		primaryStage.setTitle(Screen.DB_CONNECTION_ERROR_TITLE);
+        primaryStage.setScene(scene);
+        primaryStage.getIcons().add(new Image(Screen.PATHTOICON));
+=======
 		primaryStage.setTitle(LoginScreen.TITLE);
         primaryStage.setScene(scene);
         primaryStage.getIcons().add(new Image(LoginScreen.PATHTOICON));
+>>>>>>> 0ecdab9b45cd177b6c9d95523072ae6c389f9510
         primaryStage.setResizable(false);
         primaryStage.show();
 	}//void configureStage()

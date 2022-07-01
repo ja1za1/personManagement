@@ -13,6 +13,12 @@ import javafx.stage.Stage;
 
 public class LoginScreen extends Application{
 	
+<<<<<<< HEAD
+	public static Stage secondaryStage;
+	
+	private final static String PATHTOFXML = "/fxml/loginScreen.fxml";
+	
+=======
 	private static Stage secondaryStage;
 	
 	private final static String PATHTOFXML = "/fxml/loginScreen.fxml";
@@ -20,6 +26,7 @@ public class LoginScreen extends Application{
 	public final static String  TITLE = "Person Management",
 								PATHTOICON = "C:\\ProjetoMVC\\src\\imgs\\icon.png";
 
+>>>>>>> 0ecdab9b45cd177b6c9d95523072ae6c389f9510
 	public static void main(String[] args) throws Exception {
         launch(args);
     }
@@ -38,10 +45,17 @@ public class LoginScreen extends Application{
 	}//Parent loadFXML()
 	
 	private static void configureStage(Scene scene) {
+<<<<<<< HEAD
+		secondaryStage.setTitle(Screen.TITLE);
+        secondaryStage.setScene(scene);
+        secondaryStage.setResizable(false);
+        secondaryStage.getIcons().add(new Image(Screen.PATHTOICON));
+=======
 		secondaryStage.setTitle(TITLE);
         secondaryStage.setScene(scene);
         secondaryStage.setResizable(false);
         secondaryStage.getIcons().add(new Image(PATHTOICON));
+>>>>>>> 0ecdab9b45cd177b6c9d95523072ae6c389f9510
         secondaryStage.show();
 	}//void configureStage()
 	

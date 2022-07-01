@@ -3,7 +3,10 @@ package personman.view;
 
 
 import javafx.event.ActionEvent;
+<<<<<<< HEAD
+=======
 
+>>>>>>> 0ecdab9b45cd177b6c9d95523072ae6c389f9510
 import personman.controller.DealWithDataReaded;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -31,6 +34,19 @@ public class LoginController {
     void clickLogin(ActionEvent event) throws Exception{
         String user = userField.getText();
         String password = passwordField.getText();
+<<<<<<< HEAD
+        final int loginResult = DealWithDataReaded.verifyLogin(user, password);
+        if(loginResult == DealWithDataReaded.SUCCESS) {
+        	LoginScreen.closeScreen();
+        	MainScreen.createScene();
+        }
+        else if(loginResult == DealWithDataReaded.INCONSISTENT_DATA) {
+        	errorLogin.setText(LOGINERROR);
+        }
+        else{
+        	DbConnectionError.createScene();
+        }
+=======
         if(DealWithDataReaded.verifyLogin(user, password)) {
         	LoginScreen.closeScreen();
         	MainScreen.createScene();
@@ -38,6 +54,7 @@ public class LoginController {
         else {
         	errorLogin.setText(LOGINERROR);
         }
+>>>>>>> 0ecdab9b45cd177b6c9d95523072ae6c389f9510
         
     }//void clickLogin()
     

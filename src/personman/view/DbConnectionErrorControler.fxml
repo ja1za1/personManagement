@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personman.view.DbConnectionErrorController">
+   <center>
+      <AnchorPane prefHeight="134.0" prefWidth="481.0">
+         <children>
+            <ImageView fitHeight="96.0" fitWidth="94.0" layoutX="22.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imgs/warning-triangle.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="134.0" layoutY="27.0" prefHeight="67.0" prefWidth="342.0" text="Oh não, parece que houve algum erro durante a conexão com banco de dados :(" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="43.0" prefWidth="481.0" style="-fx-background-color: #EFEFF0;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="okButton" layoutX="367.0" layoutY="9.0" mnemonicParsing="false" onAction="#CloseScreen" prefHeight="25.0" prefWidth="94.0" text="OK">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

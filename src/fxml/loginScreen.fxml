@@ -16,7 +16,11 @@
          <children>
             <ImageView fitHeight="389.0" fitWidth="432.0" pickOnBounds="true" preserveRatio="true">
                <image>
+<<<<<<< HEAD
+                  <Image url="@../imgs/imgLogin.jpg" />
+=======
                   <Image url="C:\ProjetoMVC\src\imgs\imgLogin.jpg" />
+>>>>>>> 0ecdab9b45cd177b6c9d95523072ae6c389f9510
                </image>
             </ImageView>
          </children>
